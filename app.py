@@ -6,8 +6,6 @@ import base64, io
 from PIL import Image
 from pydantic import BaseModel, Field
 import inferless
-import os
-os.environ["HF_TOKEN"]="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"
 
 @inferless.request
 class RequestObjects(BaseModel):
