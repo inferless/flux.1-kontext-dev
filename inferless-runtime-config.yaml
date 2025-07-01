@@ -1,0 +1,15 @@
+build:
+  cuda_version: "12.1.1"
+  python_packages:
+    - "accelerate==1.8.1"
+    - "torch==2.7.0"
+    - "transformers==4.53.0"
+    - "diffusers==0.30.0"
+    - "sentencepiece==0.2.0"
+    - "protobuf==3.20.3"
+    - "hf-transfer==0.1.9"
+    - "huggingface-hub==0.33.1"
+  run:
+    - "pip install git+https://github.com/huggingface/diffusers.git@3f3f0c16a6418c7c5505c0a33088fddb5bc90317"
+    - "pip install flash-attn==2.7.3"
+
