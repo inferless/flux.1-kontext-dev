@@ -10,14 +10,14 @@ import os
 os.environ["HF_TOKEN"]="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"
 
 @inferless.request
-class Request(BaseModel):
+class RequestObjects(BaseModel):
     prompt: str = Field(default="Add a hat to the cat")
     image_url: Optional[str] = "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/diffusers/cat.png"
     guidance_scale: Optional[float] = 2.5
     num_inference_steps: Optional[int] = 30
 
 @inferless.response
-class Response(BaseModel):
+class ResponseObjects(BaseModel):
     edited_image_base64: str = Field(default="Test Output")
 
 class InferlessPythonModel:
