@@ -37,4 +37,4 @@ class InferlessPythonModel:
         return Response(edited_image_base64=encoded)
         
     def finalize(self):
-        self.model = None
+        self.pipe = None
