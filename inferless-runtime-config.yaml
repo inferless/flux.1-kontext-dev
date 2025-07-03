@@ -6,7 +6,6 @@ build:
     - "accelerate==1.8.1"
     - "torch==2.7.0"
     - "transformers==4.53.0"
-    - "diffusers==0.30.0"
     - "sentencepiece==0.2.0"
     - "protobuf==3.20.3"
     - "hf-transfer==0.1.9"
