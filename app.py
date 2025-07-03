@@ -3,7 +3,6 @@ from diffusers import FluxKontextPipeline
 from diffusers.utils import load_image
 from typing import Optional
 import base64, io
-from PIL import Image
 from pydantic import BaseModel, Field
 import inferless
 import os
