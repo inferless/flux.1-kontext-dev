@@ -47,6 +47,7 @@ curl --location '<your_inference_url>' \
                         "datatype": "BYTES"},
                   {
                         "name": "image_url",
+                        "optional": true,
                         "shape": [1],
                         "data": ["https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/diffusers/cat.png"],
                         "datatype": "BYTES"}
