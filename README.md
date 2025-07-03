@@ -2,7 +2,7 @@
 FLUX.1-Kontext-dev is Black Forest Labs’ open-weight, 12-billion-parameter rectified-flow transformer that unifies image generation and editing in a single model, accepting both text and image prompts to perform context-aware modifications with industry-leading speed, character consistency and style preservation.
 
 ## TL;DR:
-- Deployment of FLUX.1-Kontext-dev model using [transformers](https://github.com/huggingface/transformers).
+- Deployment of FLUX.1-Kontext-dev model using [diffusers](https://github.com/huggingface/diffusers).
 - Dependencies defined in `inferless-runtime-config.yaml`.
 - GitHub/GitLab template creation with `app.py`, `inferless-runtime-config.yaml` and `inferless.yaml`.
 - Model class in `app.py` with `initialize`, `infer`, and `finalize` functions.
