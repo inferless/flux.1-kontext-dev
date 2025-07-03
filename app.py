@@ -8,7 +8,6 @@ from pydantic import BaseModel, Field
 import inferless
 import os
 os.environ["HF_HUB_ENABLE_HF_TRANSFER"]='1'
-from huggingface_hub import snapshot_download
 
 @inferless.request
 class RequestObjects(BaseModel):
@@ -24,7 +23,6 @@ class ResponseObjects(BaseModel):
 class InferlessPythonModel:
     def initialize(self):
         model_id = "black-forest-labs/FLUX.1-Kontext-dev"
-        snapshot_download(repo_id=model_id,allow_patterns=["*.safetensors"])
         self.pipe = FluxKontextPipeline.from_pretrained(model_id,torch_dtype=torch.bfloat16).to("cuda")
 
     def infer(self, inputs: RequestObjects) -> ResponseObjects:
