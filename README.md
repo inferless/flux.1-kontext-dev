@@ -41,21 +41,15 @@ curl --location '<your_inference_url>' \
     --data '{
       "inputs": [
                   {
-                        "name": "sentences",
+                        "name": "prompt",
                         "shape": [1],
-                        "data": ["Find a function that prints a greeting message to the console"],
+                        "data": ["Add a hat to the cat"],
                         "datatype": "BYTES"},
                   {
-                        "name": "task",
+                        "name": "image_url",
                         "shape": [1],
-                        "data": ["code"],
-                        "datatype": "BYTES"},
-                    {
-                        "name": "prompt_name",
-                        "shape": [1],
-                        "data": ["query"],
-                        "datatype": "BYTES"
-                      }
+                        "data": ["https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/diffusers/cat.png"],
+                        "datatype": "BYTES"}
     ]
 }'
 ```
